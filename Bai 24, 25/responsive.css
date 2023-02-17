@@ -1,0 +1,30 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header-with-search{
+        height: 68px;
+    }
+    .header{
+        height: 68px;
+    }
+    .header__cart{
+        width: 74px;
+        text-align: right;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
