@@ -13,6 +13,18 @@
         width: 74px;
         text-align: right;
     }
+    .header__cart-list {
+        position: fixed;
+        top: 68px;
+        right: 0;
+        width: 100%;
+    }
+    .header__cart-list::before {
+        display: none;
+    }
+    .header__sort-bar {
+        display: flex;
+    }
 }
 
 /* tablet */
