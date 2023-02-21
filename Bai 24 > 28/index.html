@@ -107,7 +107,10 @@
                 </ul>
             </div>
             <div class="header-with-search">
-                <div class="header__logo hide-on-mobile-tablet"> <a href="http://127.0.0.1:5500/Bai%2079,80/index.html">
+                <label for="mobile-search-checkbox" class="header__mobile-search">
+                    <i class="fas fa-search header__mobile-search-icon"></i>
+                </label>
+                <div class="header__logo hide-on-tablet"> <a href="http://127.0.0.1:5500/Bai%2079,80/index.html">
                     <svg viewBox="0 0 192 65" class="header__logo-img">
                         <g fill-rule="evenodd">
                             <path fill="#fff"
@@ -116,6 +119,9 @@
                         </g>
                     </svg>    </a>            
                 </div>
+
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
                 <div class="header__search">
                     <div class="header__search-input-wrap">
                         <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">

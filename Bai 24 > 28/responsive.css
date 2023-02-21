@@ -39,4 +39,43 @@
     .hide-on-mobile {
         display: none;
     }
+    .header-with-search {
+        justify-content: space-between;
+    }
+    .header__logo { 
+        width: 150px;
+        padding: 0;
+    }
+    .header__search {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        padding: 0 16px;
+        animation: mobileSearchSidein linear 0.3s;
+        display: none;
+    }
+    .header__search-checkbox:checked ~ .header__search {
+        display: flex;
+    }
+    .header__search-history {
+        position: fixed;
+        top: calc(68px + 46px);
+        left: 0;
+        width: 100%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    @keyframes mobileSearchSidein {
+        from {
+            opacity: 0;
+            top: calc(68px / 2)
+        }
+        to {
+            opacity: 1;
+            top: 68px
+        }
+    }
 }
